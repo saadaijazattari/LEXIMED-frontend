@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --brand-primary: #0f766e;
+  --brand-secondary: #f97316;
+  --surface: rgba(255, 255, 255, 0.82);
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: "Segoe UI", "Trebuchet MS", "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.08), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.08), transparent 30%),
+    linear-gradient(180deg, #f8fbfa 0%, #f3f7f6 52%, #f7f4ef 100%);
+  color: #0f172a;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.leximed-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.leximed-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.leximed-scroll::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.18);
+  border-radius: 999px;
+}
+
+.leximed-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
